@@ -69,7 +69,7 @@ for key_len in range(3,MAX_KEY_LEN):
         prev_best_score = best_score
         prev_best_key_ch2 = best_key_ch2
         prev_best_key_ch3 = best_key_ch3
-        
+
     # 0
     if(prev_prev_best_key_ch3 == prev_best_key_ch2):
         count[key_len] += 1
@@ -97,7 +97,7 @@ for key_len in range(3,MAX_KEY_LEN):
         array[key_len][1] = best_key_ch2_0
     else:
         array[key_len][1] = best_key_ch1_1
-        
+
     count[key_len] = count[key_len] * 1.0 / key_len
 
     f = open("./out.txt","a")
